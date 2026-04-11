@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+    home_page
+{% endblock title %}
+    
+
+{% block cont %}
+<h1>this is a home page</h1>
+<h2>coming soon..........</h2>
+{% include "snippets/user_auth.html" %}    
+    
+page visit counter: {{page_vists_count}}
+<br>
+<p>path counter: {{path_counter}}</p>
+    {% endblock cont %}
+
