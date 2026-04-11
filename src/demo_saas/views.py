@@ -21,3 +21,6 @@ def home_page(request):
     # path= request.path
     page_visits.objects.create(path=request.path)
     return render(request, html_template,my_context)
+
+def about_page(request,*args, **kwargs):
+    return home_page (request , *args, **kwargs)
