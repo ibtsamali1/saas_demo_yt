@@ -10,8 +10,8 @@ def base_page(request):
 
 def home_page(request):
     query_Set=page_visits.objects.all()
-    path_total=page_visits.objects.filter(path=request.path)
     html_template='home.html'
+    path_total=page_visits.objects.filter(path=request.path)
     my_context={
         "quary_set":query_Set,
         "page_vists_count":query_Set.count(),
