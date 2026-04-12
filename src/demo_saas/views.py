@@ -14,7 +14,7 @@ def home_page(request):
     path_total=page_visits.objects.filter(path=request.path)
     my_context={
         "quary_set":query_Set,
-        "page_vists_count":query_Set.count(),
+        # "page_vists_count":query_Set.count(),
         "path_counter": path_total.count(),   
     }
     
