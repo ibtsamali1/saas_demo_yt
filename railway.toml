@@ -8,5 +8,3 @@ watchPatterns = [
   "Dockerfile"
 ]
 
-[deploy]
-startCommand = "cd src && python manage.py migrate && gunicorn demo_saas.wsgi"
