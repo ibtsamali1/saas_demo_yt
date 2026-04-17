@@ -9,4 +9,4 @@ watchPatterns = [
 ]
 
 [deploy]
-startCommand = "cd src && python manage.py migrate && gunicorn demo_saas.wsgi"
+startCommand = "python src/manage.py migrate && gunicorn demo_saas.wsgi"
