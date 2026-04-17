@@ -58,7 +58,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "cfehome.urls"
+ROOT_URLCONF = "demo_saas.urls"
 
 TEMPLATES = [
     {
@@ -76,7 +76,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "cfehome.wsgi.application"
+
+WSGI_APPLICATION = "demo_saas.wsgi.application"
 
 
 # Database
