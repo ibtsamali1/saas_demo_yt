@@ -8,6 +8,9 @@ def home_page_view(request ):
 def base_page(request):
     return render(request, 'base.html')
 
+def home_page(request):
+    return render(request, 'home.html')
+
 # def home_page(request):
 #     query_Set=page_visits.objects.all()
 #     html_template='home.html'
