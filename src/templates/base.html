@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> {% block title %}
         saas{% endblock title %}</title>
+     {% include "base/css.html" %}   
+
 </head>
 <body>
+    {% include "nav/navbar.html" %}
+    <br><br><br>
     {% block cont %}
-    <h1>
-        this is a base page,
-        <br>
-        pleaseee dont crash 
-    </h1>
+        This is a base page,
     {% endblock cont %}
-    
+
+    {% include "base/js.html" %} 
 </body>
 </html>
