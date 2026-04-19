@@ -55,6 +55,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -152,6 +153,15 @@ STATIC_VENDOR_DIR=STATICFILES_BASE_DIR /"vendors"
 STATICFILES_DIRS=[
     STATICFILES_BASE_DIR
 ]
+
+#WHITENOISE ADDED
+STORAGES = {
+    # ...
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
+
 #load to this folder
 STATIC_ROOT=BASE_DIR /"local-cdn"
  
