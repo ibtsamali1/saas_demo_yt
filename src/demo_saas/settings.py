@@ -155,12 +155,12 @@ STATICFILES_DIRS=[
 ]
 
 #WHITENOISE
-STORAGES = {
-    # ...
-    "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-    },
-}
+# STORAGES = {
+#     # ...
+#     "staticfiles": {
+#         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+#     },
+# }
 
 #load to this folder
 STATIC_ROOT=BASE_DIR /"local-cdn"
